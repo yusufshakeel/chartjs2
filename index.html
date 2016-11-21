@@ -25,8 +25,25 @@
     <p>My YouTube tutorial videos <a href="https://www.youtube.com/playlist?list=PLG6ePePp5vvY1dnDrPcCyrgBFAWXy-9uY">playlist</a> on ChartJS.
     </p>
 
+    <h2>Sample Chart Canvas</h2>
+    <canvas width="720" height="480" id="chartcanvas"></canvas>
+
     <!-- javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/Chart.min.js"></script>
+
+    <script type="text/javascript">
+    //get the canvas
+    var ctx = $("#chartcanvas");
+
+    //instantiate the Chart class
+    var chart = new Chart(ctx, {
+    	type : "line",
+    	data : {},
+    	options: {
+    		responsive : true
+    	}
+    });
+    </script>
 </body>
 </html>

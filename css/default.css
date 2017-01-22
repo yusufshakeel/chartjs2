@@ -1,0 +1,12 @@
+
+.chart-container {
+	width:  80%;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.pie-chart-container {
+	width : 360px;
+	height : 360px;
+	float : left;
+}
